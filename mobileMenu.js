@@ -14,6 +14,8 @@ let logoName = document.querySelector(".logo__name");
 
 burgerMenuImg.addEventListener("click", () => {
   if (burgerMenuImg.src === location.origin + "/app/img/sendvich-menu.png") {
+    console.log(location.origin)
+    console.log(burgerMenuImg.src)
     burgerMenuImg.src = "img/charm_menu-hamburger.png";
     index.innerHTML = "";
     footer.remove();
